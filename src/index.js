@@ -8,8 +8,8 @@ const mensage = document.querySelector(".mensage");
 
 let number = Math.floor(Math.random() * (Object.keys(db).length));
 const valuesAlreadySeen = [];
-
 const wordsArr = Object.keys(db);
+
 let currentWord = wordsArr[number];
 portugueseWord.textContent = currentWord;
 
@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
     return
   }
 
-  number = scoreSystem({ valuesAlreadySeen, currentWord, number, response });
+  number = scoreSystem({ valuesAlreadySeen, number, response });
 
   englishWordInput.value = "";
 })
