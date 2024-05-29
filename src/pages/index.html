@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Training</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>English Training</h1>
+    </header>
+    <main>
+      <section>
+        <form action="post">
+          <div>
+            <p id="portugueseWord">Palavra atual: <span id="insertWord"></span></p>
+            <input type="text" name="englishWord" id="englishWord">
+          </div>
+
+          <input type="submit" value="Enviar resposta" id="submit" />
+
+          <p class="mensage"></p>
+        </form>
+      </section>
+      <section>
+        <p>Acertos: <span id="correct">0</span></p>
+        <p>Erros: <span id="wrong">0</span></p>
+      </section>
+    </main>
+    <footer>
+      <h3>Site para treinar palavras em inglês</h3>
+    </footer>
+    <script type="module" src="../index.js"></script>
+  </body>
+</html>
